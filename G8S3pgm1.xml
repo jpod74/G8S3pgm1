@@ -39,6 +39,35 @@
                 </value>
               </block>
             </value>
+            <next>
+              <block type="oled_drawnumber" id="271" inline="true">
+                <value name="NUMBER">
+                  <block type="math_arithmetic" id="272" inline="true">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <block type="math_number" id="273">
+                        <field name="NUM">9999999</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_arithmetic" id="274" inline="true">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="math_number" id="275">
+                            <field name="NUM">9999999</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="276">
+                            <field name="NUM">9999999</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
