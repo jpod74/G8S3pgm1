@@ -13,37 +13,32 @@
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="116">
-            <field name="TEXT">9999999*(999999999*9999999)</field>
-            <next>
-              <block type="oled_drawnumber" id="134" inline="true">
-                <value name="NUMBER">
-                  <block type="math_arithmetic" id="248" inline="true">
+          <block type="oled_drawnumber" id="134" inline="true">
+            <value name="NUMBER">
+              <block type="math_arithmetic" id="248" inline="true">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <block type="math_number" id="255">
+                    <field name="NUM">9999999</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_arithmetic" id="262" inline="true">
                     <field name="OP">MULTIPLY</field>
                     <value name="A">
-                      <block type="math_number" id="255">
+                      <block type="math_number" id="269">
                         <field name="NUM">9999999</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_arithmetic" id="262" inline="true">
-                        <field name="OP">MULTIPLY</field>
-                        <value name="A">
-                          <block type="math_number" id="269">
-                            <field name="NUM">9999999</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="270">
-                            <field name="NUM">9999999</field>
-                          </block>
-                        </value>
+                      <block type="math_number" id="270">
+                        <field name="NUM">9999999</field>
                       </block>
                     </value>
                   </block>
                 </value>
               </block>
-            </next>
+            </value>
           </block>
         </next>
       </block>
