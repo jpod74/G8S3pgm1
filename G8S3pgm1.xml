@@ -4,30 +4,40 @@
       <block type="oled_setcursor" id="40" inline="true">
         <value name="STARTX">
           <block type="math_number" id="106">
-            <field name="NUM">50</field>
+            <field name="NUM">0</field>
           </block>
         </value>
         <value name="STARTY">
           <block type="math_number" id="107">
-            <field name="NUM">30</field>
+            <field name="NUM">10</field>
           </block>
         </value>
         <next>
           <block type="oled_drawtext" id="116">
-            <field name="TEXT">100+267=</field>
+            <field name="TEXT">4+(3*2)=</field>
             <next>
               <block type="oled_drawnumber" id="134" inline="true">
                 <value name="NUMBER">
-                  <block type="math_arithmetic" id="173" inline="true">
+                  <block type="math_arithmetic" id="248" inline="true">
                     <field name="OP">ADD</field>
                     <value name="A">
-                      <block type="math_number" id="180">
-                        <field name="NUM">100</field>
+                      <block type="math_number" id="255">
+                        <field name="NUM">4</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="181">
-                        <field name="NUM">267</field>
+                      <block type="math_arithmetic" id="262" inline="true">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="math_number" id="269">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="270">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
